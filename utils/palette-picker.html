@@ -255,12 +255,12 @@ swatches.forEach((swatch) => {
   swatch.appendChild(swatchName);
 
   const span = document.createElement('span');
-  span.innerHTML = `text <b>.suse-pl-text-color-${name}</b>`;
+  span.innerHTML = `text <b>.suse-pl-text-${name}</b>`;
   swatch.appendChild(span);
   
 
   const bgtext = document.createElement('span');
-  bgtext.innerHTML = `bg <b>.suse-pl-bg-color-${name}</b>`;
+  bgtext.innerHTML = `bg <b>.suse-pl-bg-${name}</b>`;
   swatch.appendChild(bgtext);
 
   const vartext = document.createElement('span');
