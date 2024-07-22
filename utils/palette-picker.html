@@ -1,0 +1,305 @@
+<html>
+    <head>
+        <title>SUSE Color Picker</title>
+        <link rel="stylesheet" href="../css/suse-palette.css">
+
+        <style>
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "SUSE", "Poppins", sans-serif;
+}
+
+.palette {
+  min-height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+}
+
+.swatch {
+  align-items: center;
+
+  min-width: 10em;
+  position: relative;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+  padding: 0 0 1em 0;
+  display: grid;
+  min-height: 11em;
+  vertical-align: middle;
+  align-content: center;
+}
+
+.swatch > * {
+  padding-left: 1rem;  
+ 
+}
+
+.swatch span {
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  position: relative;
+  cursor: pointer;
+}
+.swatch b {
+  font-weight: 600;
+  display: block;
+  align-self: middle;
+  position: absolute;
+  top: -0.5em;
+  bottom: -0.5em;
+  line-height: 4em;
+  right: 0;
+  left: 0;
+  user-select: contain;
+  padding-left: 4.3em;
+}
+.swatch span {
+  line-height: 3em;
+}
+
+@keyframes whoosh {
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.success {
+  animation: whoosh 0.75s linear forwards;
+  background-image: linear-gradient(
+    -45deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.5) 20%,
+    rgba(255, 255, 255, 0.5) 60%,
+    transparent 80%
+  );
+
+  background-position: 100% 100%;
+  background-size: 600%;
+}
+
+.success:after {
+  color: black;
+  background-color: white;
+  border-radius: 0.6666em;
+  font-weight: 700;
+  letter-spacing: 0;
+  content: "copied";
+  font-size: 0.5em;
+  display: inline-block;
+  transform: scale(1.5);
+  transform-origin: 50% 50%;
+  margin: 0;
+  width: auto;
+  box-shadow: 0 0.6em 0.75em -0.3em rgba(0, 0, 0, 0.25);
+  height: 2.5em;
+  line-height: 2.75em;
+  padding: 0 1em 0 3em;
+  margin-left: 2.5em;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10' %3E %3Cpath d='m4 4v5h5v-5zm-2 3v-5h5' fill='none' stroke='%23000' stroke-width='1' /%3E%3C/svg%3E ");
+  background-position: 0.5em 50%;
+  background-repeat: no-repeat;
+  background-size: 2em;
+  animation: copied 2s cubic-bezier(0.6, 0.2, 0.1, 1) forwards;
+  position: relative;
+  z-index: 9;
+}
+
+@keyframes copied {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  40%,
+  60% {
+    opacity: 1;
+    transform: scale(1.5) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.5) translate(0, -1em);
+    opacity: 0;
+  }
+}
+        </style>
+    </head>
+<body>
+
+<div class="palette">
+
+  
+
+  <div class="swatch" name="pine"> </div>
+  <div class="swatch" name="jungle"> </div>
+  <div class="swatch" name="mint"> </div>
+  <div class="swatch" name="persimmon"> </div>
+  <div class="swatch" name="midnight"> </div>
+  <div class="swatch" name="waterhole"> </div>
+  <div class="swatch" name="fog"> </div>
+  <div class="swatch" name="white"> </div>
+
+  <div class="swatch" name="jungle-1"> </div>
+  <div class="swatch" name="jungle-2"> </div>
+  <div class="swatch" name="jungle-3"> </div>
+  <div class="swatch" name="jungle-4"> </div>
+  <div class="swatch" name="jungle-5"> </div>
+  <div class="swatch" name="jungle-6"> </div>
+  <div class="swatch" name="jungle-7"> </div>
+  <div class="swatch" name="jungle-8"> </div>
+
+
+  <div class="swatch" name="pine-1"> </div>
+  <div class="swatch" name="pine-2"> </div>
+  <div class="swatch" name="pine-3"> </div>
+  <div class="swatch" name="pine-4"> </div>
+  <div class="swatch" name="pine-5"> </div>
+  <div class="swatch" name="pine-6"> </div>
+  <div class="swatch" name="pine-7"> </div>
+  <div class="swatch" name="pine-8"> </div>
+
+  <div class="swatch" name="persimmon-1"> </div>
+  <div class="swatch" name="persimmon-2"> </div>
+  <div class="swatch" name="persimmon-3"> </div>
+  <div class="swatch" name="persimmon-4"> </div>
+  <div class="swatch" name="persimmon-5"> </div>
+  <div class="swatch" name="persimmon-6"> </div>
+  <div class="swatch" name="persimmon-7"> </div>
+  <div class="swatch" name="persimmon-8"> </div>
+
+  <div class="swatch" name="blue-1"> </div>
+  <div class="swatch" name="blue-2"> </div>
+  <div class="swatch" name="blue-3"> </div>
+  <div class="swatch" name="blue-4"> </div>
+  <div class="swatch" name="blue-5"> </div>
+  <div class="swatch" name="blue-6"> </div>
+  <div class="swatch" name="blue-7"> </div>
+  <div class="swatch" name="blue-8"> </div>
+
+
+  <div class="swatch" name="fog-1"> </div>
+  <div class="swatch" name="fog-2"> </div>
+  <div class="swatch" name="fog-3"> </div>
+  <div class="swatch" name="fog-4"> </div>
+  <div class="swatch" name="fog-5"> </div>
+  <div class="swatch" name="fog-6"> </div>
+  <div class="swatch" name="fog-7"> </div>
+  <div class="swatch" name="fog-8"> </div>
+
+
+
+ 
+  <div class="swatch" name="spectrum-1"> </div>
+  <div class="swatch" name="spectrum-2"> </div>
+  <div class="swatch" name="spectrum-3"> </div>
+  <div class="swatch" name="spectrum-4"> </div>
+  <div class="swatch" name="spectrum-5"> </div>
+  <div class="swatch" name="spectrum-6"> </div>
+  <div class="swatch" name="spectrum-7"> </div>
+    </div>
+
+</body>
+<script>
+
+
+
+window.onload = function() {
+const elements = document.querySelectorAll('.swatch');
+
+for (let i = 0; i < elements.length; i++) {
+
+  
+  const rgb = window.getComputedStyle(elements[i]).getPropertyValue('background-color');
+  const colors = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+
+  const r = parseInt(colors[1]);
+  const g = parseInt(colors[2]);
+  const b = parseInt(colors[3]);
+
+  const o = Math.round(((r * 299) + (g * 587) + (b * 114)) / 1000);
+
+  if (o > 125) {
+    elements[i].style.color = 'black';
+  } else {
+    elements[i].style.color = 'white';
+  }
+
+
+  
+
+}
+
+};
+
+const swatches = document.querySelectorAll('.swatch');
+
+// Loop through each swatch
+swatches.forEach((swatch) => {
+  // Get the name attribute value as a string
+  const name = swatch.getAttribute('name');
+  
+  // Create a new <span> element within the swatch
+  
+  const swatchName = document.createElement('h2');
+  swatchName.innerText = `${name}`;
+  swatch.appendChild(swatchName);
+
+  const span = document.createElement('span');
+  span.innerHTML = `text <b>.suse-pl-text-color-${name}</b>`;
+  swatch.appendChild(span);
+  
+
+  const bgtext = document.createElement('span');
+  bgtext.innerHTML = `bg <b>.suse-pl-bg-color-${name}</b>`;
+  swatch.appendChild(bgtext);
+
+  const vartext = document.createElement('span');
+  vartext.innerHTML = `var <b>--color-${name}</b>`;
+  swatch.appendChild(vartext);
+
+
+  // Set the background color using the variable from the name attribute
+  swatch.style.backgroundColor = `var(--color-${name})`;
+});
+ 
+
+
+const aioColors = document.querySelectorAll(".swatch b");
+
+aioColors.forEach((color) => {
+  color.addEventListener("click", () => {
+    const selection = window.getSelection();
+    const range = document.createRange();
+    range.selectNodeContents(color);
+    selection.removeAllRanges();
+    selection.addRange(range);
+
+    try {
+      document.execCommand("copy");
+      selection.removeAllRanges();
+
+      const original = color.textContent;
+      // color.textContent = 'Copied!';
+      color.classList.add("success");
+
+      setTimeout(() => {
+        color.textContent = original;
+        color.classList.remove("success");
+      }, 1500);
+    } catch (e) {
+      const errorMsg = document.querySelector(".error-msg");
+      errorMsg.classList.add("show");
+
+      setTimeout(() => {
+        errorMsg.classList.remove("show");
+      }, 1500);
+    }
+  });
+});
+
+</script>
+</html>
