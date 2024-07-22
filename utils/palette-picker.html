@@ -195,9 +195,6 @@ body {
   <div class="swatch" name="fog-6"> </div>
   <div class="swatch" name="fog-7"> </div>
   <div class="swatch" name="fog-8"> </div>
-
-
-
  
   <div class="swatch" name="spectrum-1"> </div>
   <div class="swatch" name="spectrum-2"> </div>
@@ -255,22 +252,19 @@ swatches.forEach((swatch) => {
   swatchName.innerText = `${name}`;
   swatch.appendChild(swatchName);
 
-  const varcol = document.createElement('span');
-  varcol.innerHTML = `text <b>.suse-pl-text-${name}</b>`;
-  swatch.appendChild(varcol);
-  
-
-  const bgcol = document.createElement('span');
-  bgcol.innerHTML = `bg <b>.suse-pl-bg-${name}</b>`;
-  swatch.appendChild(bgcol);
-
   const vartext = document.createElement('span');
   vartext.innerHTML = `var <b>--color-${name}</b>`;
   swatch.appendChild(vartext);
 
+  const varcol = document.createElement('span');
+  varcol.innerHTML = `text <b>suse-pl-text-${name}</b>`;
+  swatch.appendChild(varcol);
 
+  const bgcol = document.createElement('span');
+  bgcol.innerHTML = `bg <b>suse-pl-bg-${name}</b>`;
+  swatch.appendChild(bgcol);
 
-
+ 
   // Set the background color using the variable from the name attribute
   swatch.style.backgroundColor = `var(--color-${name})`;
 
