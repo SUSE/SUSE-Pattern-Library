@@ -1,4 +1,7 @@
 :root{
+    --color-white:       rgb(255, 255, 255);
+    --color-black:       rgb( 0,    0,   0);
+
     --color-pine:        rgb( 12,  50,  44);
     --color-jungle:      rgb( 48, 186, 120);
     --color-mint:        rgb(144, 235, 205);
@@ -6,7 +9,6 @@
     --color-midnight:    rgb( 25,  32, 114);
     --color-waterhole:   rgb( 36,  83, 255);
     --color-fog:         rgb(239, 239, 239);
-    --color-white:       rgb(255, 255, 255);
 
     --color-jungle-1:    var(--color-pine);
     --color-jungle-2:    rgb(  2,  89,  55);
@@ -53,9 +55,6 @@
     --color-fog-7:       rgb(220, 219, 220);
     --color-fog-8:       rgb(239, 239, 239);
 
-    --color-white:       rgb(255, 255, 255);
-    --color--black:      rgb(  0,   0,   0);
-
     --color-spectrum-1:  rgb(  0, 189, 167);
     --color-spectrum-2:  rgb(161, 239, 139); 
     --color-spectrum-3:  rgb(125, 198, 226); 
@@ -80,6 +79,8 @@
     }
 
 /*helper classes*/
+.suse-pl-bg-white        {background-color:var(--color-white)}
+.suse-pl-bg-black        {background-color:var(--color-black)}
 
 .suse-pl-bg-pine       {background-color:var(--color-pine)}
 .suse-pl-bg-pine-0     {background-color:var(--color-pine-0)}
@@ -149,6 +150,10 @@
 .suse-pl-bg-spectrum-6 {background-color:var(--color-spectrum-6)}
 .suse-pl-bg-spectrum-7 {background-color:var(--color-spectrum-7)}
 
+.suse-pl-text-white       {color:var(--color-white)}
+.suse-pl-text-black       {color:var(--color-black)}
+
+
 .suse-pl-text-pine       {color:var(--color-pine)}
 .suse-pl-text-pine-0     {color:var(--color-pine-0)}
 .suse-pl-text-pine-1     {color:var(--color-pine-1)}
@@ -216,3 +221,6 @@
 .suse-pl-text-spectrum-5 {color:var(--color-spectrum-5)}
 .suse-pl-text-spectrum-6 {color:var(--color-spectrum-6)}
 .suse-pl-text-spectrum-7 {color:var(--color-spectrum-7)}
+
+/* UI Theme Classes */
+

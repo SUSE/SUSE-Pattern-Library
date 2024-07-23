@@ -1,19 +1,9 @@
-<html>
+<html class="suse-pl">
     <head>
         <title>SUSE Color Picker</title>
-        <link rel="stylesheet" href="../css/suse-palette.css">
-        <link rel="stylesheet" href="../css/suse-fonts.css">
-
+        <link rel="stylesheet" href="../css/suse-pl-import.css" />
         <style>
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  font-family: "SUSE", "Poppins", sans-serif;
-}
+ 
 
 .palette {
   min-height: 100%;
@@ -22,18 +12,18 @@ body {
   grid-template-columns:  1fr 1fr 1fr 1fr;
 }
 
-@media (min-width: 2200px) {.palette{  grid-template-columns: 1fr   1fr  1fr  1fr 1fr ;}}
-
 @media (max-width: 1200px) {.palette{  grid-template-columns: 1fr  1fr 1fr ;}}
 @media (max-width: 900px) {.palette{  grid-template-columns: 1fr 1fr ;}}
 @media (max-width: 600px) {.palette{  grid-template-columns: 1fr ;}}
+@media (min-width: 1800px) {.palette{  grid-template-columns: 1fr   1fr  1fr  1fr 1fr ;}}
+@media (min-width: 2600px) {.palette{  grid-template-columns: 1fr  1fr  1fr  1fr  1fr 1fr 1fr 1fr ;}}
 
 .swatch {
   align-items: center;
 
   min-width: 10em;
   position: relative;
-  grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
   padding: 0 0 1em 0;
   display: grid;
   min-height: 11em;
@@ -72,15 +62,17 @@ body {
 @keyframes whoosh {
   100% {
     background-position: 0% 0%;
+    box-shadow: 0 0 0 transparent
   }
 }
 .success {
+ box-shadow: 0 .3em 0 -.2em  ;
   animation: whoosh 0.75s linear forwards;
   background-image: linear-gradient(
     -45deg,
     transparent 20%,
-    rgba(255, 255, 255, 0.5) 20%,
-    rgba(255, 255, 255, 0.5) 60%,
+    rgba(255, 255, 255, .6) 20%,
+    rgba(255, 255, 255, .6) 60%,
     transparent 80%
   );
 
@@ -89,28 +81,23 @@ body {
 }
 
 .success:after {
-  color: black;
-  background-color: white;
-  border-radius: 0.6666em;
+  color: var(--color-black);
+  background-color: var(--color-white);
   font-weight: 700;
   letter-spacing: 0;
-  content: "copied";
+  content: "Copied";
   font-size: 0.5em;
   display: inline-block;
   transform: scale(1.5);
   transform-origin: 50% 50%;
   margin: 0;
   width: auto;
-  box-shadow: 0 0.6em 0.75em -0.3em rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.36em 0.75em -0.3em rgba(0, 0, 0, 0.25);
   height: 2.5em;
-  line-height: 2.75em;
-  padding: 0 1em 0 3em;
+  line-height: 2.5em;
+  padding: 0 1em;
   margin-left: 2.5em;
   pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10' %3E %3Cpath d='m4 4v5h5v-5zm-2 3v-5h5' fill='none' stroke='%23000' stroke-width='1' /%3E%3C/svg%3E ");
-  background-position: 0.5em 50%;
-  background-repeat: no-repeat;
-  background-size: 2em;
   animation: copied 2s cubic-bezier(0.6, 0.2, 0.1, 1) forwards;
   position: relative;
   z-index: 9;
@@ -135,7 +122,7 @@ body {
 }
         </style>
     </head>
-<body>
+<body >
 
 <div class="palette">
 
@@ -149,6 +136,7 @@ body {
   <div class="swatch" name="waterhole"> </div>
   <div class="swatch" name="fog"> </div>
   <div class="swatch" name="white"> </div>
+  
 
   <div class="swatch" name="jungle-1"> </div>
   <div class="swatch" name="jungle-2"> </div>
@@ -205,12 +193,30 @@ body {
   <div class="swatch" name="spectrum-6"> </div>
   <div class="swatch" name="spectrum-7"> </div>
   <div class="swatch" name="spectrum-8"> </div>
+
+  <div class="swatch" name="black"> </div>
+
+
+
+
     </div>
 
 </body>
 <script>
 
-
+function rgbToHex(col)
+{
+    if(col.charAt(0)=='r')
+    {
+        col=col.replace('rgb(','').replace(')','').split(',');
+        var r=parseInt(col[0], 10).toString(16);
+        var g=parseInt(col[1], 10).toString(16);
+        var b=parseInt(col[2], 10).toString(16);
+        r=r.length==1?'0'+r:r; g=g.length==1?'0'+g:g; b=b.length==1?'0'+b:b;
+        var colHex='#'+r+g+b;
+        return colHex;
+    }
+}
 
 window.onload = function() {
 const elements = document.querySelectorAll('.swatch');
@@ -271,8 +277,14 @@ swatches.forEach((swatch) => {
 
   const backgroundColor = window.getComputedStyle(swatch).getPropertyValue('background-color');
   const span = document.createElement('span');
-  span.innerHTML = `rgb <b>${backgroundColor}`;
+  span.innerHTML = `rgb <b>${backgroundColor}</b>`;
   swatch.appendChild(span);
+
+  const hexval = document.createElement('span'); 
+   
+  hexval.innerHTML = `hex <b>${rgbToHex(backgroundColor)}</b>`;
+  swatch.appendChild(hexval);
+  
 });
  
 
@@ -309,6 +321,9 @@ aioColors.forEach((color) => {
     }
   });
 });
+
+
+
 
 </script>
 </html>

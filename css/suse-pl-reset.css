@@ -1,0 +1,37 @@
+/*
+SUSE Pattern Library Reset
+scoped to .suse-pl class for easier merging with existing code bases
+*/
+
+/* EASY BOX MODEL */
+.suse-pl,
+.suse-pl *,
+.suse-pl*::before,
+.suse-pl*::after {
+  box-sizing: border-box;
+}
+/* NO MARGIN BY DEFAULT */
+
+.suse-pl,
+.suse-pl * {
+  margin: 0;
+}
+/* FONT FIXES */
+.suse-pl {
+  font-family: "SUSE", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/* MEDIA */
+.suse-pl :is(img, picture, video, canvas, svg) {
+  display: block;
+  max-width: 100%;
+}
+/* FIX FORM FONTS */
+.suse-pl :is(input, button, textarea, select) {
+  font: inherit;
+}
+/* NO TEXT OVERFLOW */
+.suse-pl :is(p, h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: break-word;
+}
