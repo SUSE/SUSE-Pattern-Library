@@ -70,17 +70,34 @@
     --color-sky:      var(--color-spectrum-3);
     --color-lilac:    var(--color-spectrum-4);
     --color-amethyst: var(--color-spectrum-5);
-    --color-grape:    var(--color-spectrum-5);
     --color-peach:    var(--color-spectrum-6);
     --color-marigold: var(--color-spectrum-7);
-    --color-orange:   var(--color-spectrum-7);
-    --color-red:      var(--color-spectrum-8);
     --color-rust:     var(--color-spectrum-8);
     }
 
+.suse-pl-bg-teal       {background-color:var(--color-teal)}
+.suse-pl-bg-lime       {background-color:var(--color-lime)}
+.suse-pl-bg-sky        {background-color:var(--color-sky)}
+.suse-pl-bg-lilac      {background-color:var(--color-lilac)}
+.suse-pl-bg-amethyst   {background-color:var(--color-amethyst)}
+.suse-pl-bg-peach      {background-color:var(--color-peach)}
+.suse-pl-bg-cantalope  {background-color:var(--color-cantalope)}
+.suse-pl-bg-rust        {background-color:var(--color-rust)}
+
+.suse-pl-text-teal     {color:var(--color-teal)}
+.suse-pl-text-lime     {color:var(--color-lime)}
+.suse-pl-text-sky      {color:var(--color-sky)}
+.suse-pl-text-lilac    {color:var(--color-lilac)}
+.suse-pl-text-amethyst {color:var(--color-amethyst)}
+.suse-pl-text-peach    {color:var(--color-peach)}
+.suse-pl-text-marigold {color:var(--color-marigold)}
+.suse-pl-text-cantalope{color:var(--color-cantalope)}
+.suse-pl-text-rust      {color:var(--color-rust)}
+
+
 /*helper classes*/
-.suse-pl-bg-white        {background-color:var(--color-white)}
-.suse-pl-bg-black        {background-color:var(--color-black)}
+.suse-pl-bg-white      {background-color:var(--color-white)}
+.suse-pl-bg-black      {background-color:var(--color-black)}
 
 .suse-pl-bg-pine       {background-color:var(--color-pine)}
 .suse-pl-bg-pine-0     {background-color:var(--color-pine-0)}
@@ -150,9 +167,12 @@
 .suse-pl-bg-spectrum-6 {background-color:var(--color-spectrum-6)}
 .suse-pl-bg-spectrum-7 {background-color:var(--color-spectrum-7)}
 
+
+
+
+
 .suse-pl-text-white       {color:var(--color-white)}
 .suse-pl-text-black       {color:var(--color-black)}
-
 
 .suse-pl-text-pine       {color:var(--color-pine)}
 .suse-pl-text-pine-0     {color:var(--color-pine-0)}
