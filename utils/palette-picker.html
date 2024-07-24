@@ -13,8 +13,8 @@
 }
 
 @media (max-width: 1200px) {.palette{  grid-template-columns: 1fr  1fr 1fr ;}}
-@media (max-width: 900px) {.palette{  grid-template-columns: 1fr 1fr ;}}
-@media (max-width: 600px) {.palette{  grid-template-columns: 1fr ;}}
+@media (max-width: 900px)  {.palette{  grid-template-columns: 1fr 1fr ;}}
+@media (max-width: 600px)  {.palette{  grid-template-columns: 1fr ;}}
 @media (min-width: 1800px) {.palette{  grid-template-columns: 1fr   1fr  1fr  1fr 1fr ;}}
 @media (min-width: 2600px) {.palette{  grid-template-columns: 1fr  1fr  1fr  1fr  1fr 1fr 1fr 1fr ;}}
 
@@ -67,13 +67,13 @@
 }
 .success {
  box-shadow: 0 .3em 0 -.2em  ;
-  animation: whoosh 0.75s linear forwards;
+  animation: whoosh 0.8s ease forwards;
   background-image: linear-gradient(
     -45deg,
     transparent 20%,
-    rgba(255, 255, 255, .6) 20%,
-    rgba(255, 255, 255, .6) 60%,
-    transparent 80%
+    currentcolor 20%,
+    currentcolor 30%,
+    transparent 40%
   );
 
   background-position: 100% 100%;
@@ -193,9 +193,6 @@
   <div class="swatch" name="spectrum-6"> </div>
   <div class="swatch" name="spectrum-7"> </div>
   <div class="swatch" name="spectrum-8"> </div>
-
-
-
 
   <div class="swatch" name="teal"> </div>
   <div class="swatch" name="lime"> </div>
