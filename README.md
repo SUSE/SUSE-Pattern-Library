@@ -17,10 +17,10 @@ helper utilities are in the utils directory and
 For feeedback and discussion please join #network-design-cop on slack.
 
 ## Current Project Participants: 
-Dominic Vieira
-James Mason
-Kaira Johnson
-Karen Van der Veer
-Alex Palladii
-Thomas Schmidt
-Andy Fitzsimon
+* Dominic Vieira @domvieira
+* James Mason @bear454
+* Kaira Johnson 
+* Karen Van der Veer 
+* Alex Palladii @arharovets
+* Thomas Schmidt
+* Andy Fitzsimon @andyfitz-suse
