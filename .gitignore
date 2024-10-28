@@ -41,4 +41,4 @@ typings/
 
 # builds
 www/
-assets/
+dist/
