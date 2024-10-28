@@ -1,0 +1,68 @@
+suse-pl-sidebar {
+  display: block;
+  padding-top: 60px;
+
+  & nav {
+    float: left;
+    height: 100%;
+    min-height: 100vh;
+    width: 25vw;
+
+
+    font-family: "SUSE", sans-serif;
+    background-color: var(--color-white);
+    color: var(--color-pine);
+    font-size: 20px;
+
+    & section {
+      padding: 2em 2em 0;
+
+      & h1 {
+        font-size: inherit;
+        font-weight: 500;
+        border-bottom: 1px solid var(--color-fog);
+        margin-bottom: 0.5em !important;
+      }
+
+      & a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+          color: var(--color-persimmon);
+        }
+
+        &:active {
+          color: var(--color-jungle);
+        }
+
+        &.active {
+          color: var(--color-jungle);
+        }
+      }
+
+      & ul {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.75;
+        font-size: smaller;
+        font-weight: 200;
+
+        & li, & a {
+          display: inline-block;
+
+          & ul {
+            padding-left: 1em !important;
+          }
+
+          &.disabled {
+            color: var(--color-fog-5);
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+suse-pl-content-area {
+  display: block;
+
+  padding: 2em 2em 2em calc(25vw + 2em);
+
+  h1 {
+    font-weight: 500;
+  }
+
+  h2 {
+    font-weight: 300;
+  }
+
+}

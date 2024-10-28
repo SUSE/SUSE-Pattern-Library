@@ -1,0 +1,33 @@
+suse-pl-header {
+  display: block;
+
+  & header {
+    background-color: var(--color-pine);
+    color: var(--color-fog);
+    position: fixed;
+    width: 100%;
+    font-size: 16px;
+    padding: 0.5em;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & h1 {
+      padding: 0.5em;
+      font-size: inherit;
+      font-family: "SUSE", sans-serif;
+      font-weight: 400;
+
+      & img#suse-logo {
+        height: 1em;
+        padding: 0.5em;
+        margin-right: 0.5em;
+        vertical-align: middle;
+        border-right: 2px solid var(--color-jungle);
+        display: inline-block;
+      }
+    }
+  }
+}
