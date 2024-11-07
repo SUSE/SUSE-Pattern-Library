@@ -1,55 +1,7 @@
 @font-face {
-    font-family: 'SUSE';
-    font-style: normal;
-    font-weight: 100;
-    src: url(./assets/SUSE-Thin.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'SUSE';
-    font-style: normal;
-    font-weight: 200;
-    src: url(./assets/SUSE-ExtraLight.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'SUSE';
-    font-style: normal;
-    font-weight: 300;
-    src: url(./assets/SUSE-Light.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'SUSE';
-    font-style: normal;
-    font-weight: 400;
-    src: url(./assets/SUSE-Regular.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'SUSE';
-    font-style: normal;
-    font-weight: 500;
-    src: url(./assets/SUSE-Medium.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'SUSE';
-    font-style: normal;
-    font-weight: 600;
-    src: url(./assets/SUSE-SemiBold.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'SUSE';
-    font-style: normal;
-    font-weight: 700;
-    src: url(./assets/SUSE-Bold.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'SUSE';
-    font-style: normal;
-    font-weight: 800;
-    src: url(./assets/SUSE-ExtraBold.woff2) format('woff2');
+  font-family: "SUSE";
+  src: url("assets/SUSE-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
