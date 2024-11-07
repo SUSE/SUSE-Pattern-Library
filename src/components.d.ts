@@ -6,8 +6,6 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface SiteRouter {
-    }
     interface SusePlContentArea {
     }
     interface SusePlHeader {
@@ -27,12 +25,6 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLSiteRouterElement extends Components.SiteRouter, HTMLStencilElement {
-    }
-    var HTMLSiteRouterElement: {
-        prototype: HTMLSiteRouterElement;
-        new (): HTMLSiteRouterElement;
-    };
     interface HTMLSusePlContentAreaElement extends Components.SusePlContentArea, HTMLStencilElement {
     }
     var HTMLSusePlContentAreaElement: {
@@ -64,7 +56,6 @@ declare global {
         new (): HTMLSusePlSidebarElement;
     };
     interface HTMLElementTagNameMap {
-        "site-router": HTMLSiteRouterElement;
         "suse-pl-content-area": HTMLSusePlContentAreaElement;
         "suse-pl-header": HTMLSusePlHeaderElement;
         "suse-pl-horizontal-card": HTMLSusePlHorizontalCardElement;
@@ -73,8 +64,6 @@ declare global {
     }
 }
 declare namespace LocalJSX {
-    interface SiteRouter {
-    }
     interface SusePlContentArea {
     }
     interface SusePlHeader {
@@ -93,7 +82,6 @@ declare namespace LocalJSX {
         "pageTitle"?: string;
     }
     interface IntrinsicElements {
-        "site-router": SiteRouter;
         "suse-pl-content-area": SusePlContentArea;
         "suse-pl-header": SusePlHeader;
         "suse-pl-horizontal-card": SusePlHorizontalCard;
@@ -105,7 +93,6 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "site-router": LocalJSX.SiteRouter & JSXBase.HTMLAttributes<HTMLSiteRouterElement>;
             "suse-pl-content-area": LocalJSX.SusePlContentArea & JSXBase.HTMLAttributes<HTMLSusePlContentAreaElement>;
             "suse-pl-header": LocalJSX.SusePlHeader & JSXBase.HTMLAttributes<HTMLSusePlHeaderElement>;
             "suse-pl-horizontal-card": LocalJSX.SusePlHorizontalCard & JSXBase.HTMLAttributes<HTMLSusePlHorizontalCardElement>;
