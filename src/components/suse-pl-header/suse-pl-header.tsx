@@ -1,23 +1,40 @@
-import { Component, Prop, getAssetPath, h } from '@stencil/core';
+import { Component, Prop, Host, Element, getAssetPath, h } from '@stencil/core';
 
 @Component({
   tag: 'suse-pl-header',
   styleUrl: 'suse-pl-header.css',
+  shadow: true,
   assetsDirs: ['assets']
+
 })
 export class SusePlHeader {
   @Prop() pageTitle: string;
   @Prop() logoSrc?: string;
+  @Element() el: HTMLElement;
+
+  suseRender(): boolean {
+    return Boolean(this.el.closest('.suse-pl'));
+  }
 
   render() {
     return (
-      <header>
-        <h1>
-          <img id="suse-logo" src={ getAssetPath(`./assets/suse-hor-neg.svg`) }></img>
-          { this.pageTitle }
-        </h1>
-        <slot></slot>
-      </header>
+      <Host>
+        <header class={
+          this.suseRender()
+          ? 'suse-product'
+          : 'upstream'
+        }>
+          <h1>
+            <img id="logo" src={
+              this.suseRender()
+              ? getAssetPath(`./assets/suse-hor-neg.svg`)
+              : this.logoSrc
+            }></img>
+            { this.pageTitle }
+          </h1>
+          <slot></slot>
+        </header>
+      </Host>
     );
   }
 }
