@@ -9,6 +9,7 @@ export namespace Components {
     interface SusePlContentArea {
     }
     interface SusePlHeader {
+        "logoSrc"?: string;
         "pageTitle": string;
     }
     interface SusePlHorizontalCard {
@@ -67,6 +68,7 @@ declare namespace LocalJSX {
     interface SusePlContentArea {
     }
     interface SusePlHeader {
+        "logoSrc"?: string;
         "pageTitle"?: string;
     }
     interface SusePlHorizontalCard {

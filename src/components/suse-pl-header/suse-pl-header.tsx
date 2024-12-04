@@ -7,6 +7,7 @@ import { Component, Prop, getAssetPath, h } from '@stencil/core';
 })
 export class SusePlHeader {
   @Prop() pageTitle: string;
+  @Prop() logoSrc?: string;
 
   render() {
     return (
