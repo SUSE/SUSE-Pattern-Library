@@ -21,7 +21,7 @@ header {
     font-weight: 400;
 
     & img#logo {
-      height: 1em;
+      height: 1rem;
       padding: 0.5em;
       margin-right: 0.5em;
       vertical-align: middle;
