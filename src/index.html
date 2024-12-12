@@ -8,10 +8,52 @@
     <script type="module" src="/build/suse-pl.esm.js"></script>
     <script nomodule src="/build/suse-pl.js"></script>
     <link rel="stylesheet" href="/build/suse-pl.css" />
+    <style>
+      /*
+      SUSE Pattern Library Reset
+      */
 
+      /* EASY BOX MODEL */
+      *, ::before, ::after {
+        box-sizing: border-box;
+      }
+      /* NO MARGIN BY DEFAULT */
+      * {
+        margin: 0;
+      }
+      /* FONT FIXES */
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+      /* MEDIA */
+      :is(img, picture, video, canvas, svg) {
+        display: block;
+        max-width: 100%;
+      }
+      /* FIX FORM FONTS */
+      :is(input, button, textarea, select) {
+        font: inherit;
+      }
+      /* NO TEXT OVERFLOW */
+      :is(p, h1, h2, h3, h4, h5, h6) {
+        overflow-wrap: break-word;
+      }
+    </style>
+    <style>
+      body {
+        background-color: var(--color-fog-8);
+      }
+
+      body.suse-pl {
+        background-color: var(--color-jungle-8);
+      }
+    </style>
   </head>
-  <body class="suse-pl" style="background-color: var(--color-jungle-8);">
-    <suse-pl-header page-title="Pattern Library"></suse-pl-header>
+  <body class="suse-pl">
+    <suse-pl-header page-title="Pattern Library" logo-src="https://en.opensuse.org/images/4/44/Button-filled-colour.png">
+    </suse-pl-header>
     <suse-pl-sidebar>
       <suse-pl-nav-section section-title="About">
         <li>

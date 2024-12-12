@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, Element, h } from '@stencil/core';
 
 @Component({
   tag: 'suse-pl-content-area',
@@ -6,10 +6,22 @@ import { Component, Host, h } from '@stencil/core';
 })
 
 export class SusePlContentArea {
+  @Element() el: HTMLElement;
+
+  suseRender(): boolean {
+    return Boolean(this.el.closest('.suse-pl'));
+  }
+
   render() {
     return (
       <Host>
-        <slot></slot>
+        <div class={
+          this.suseRender()
+          ? 'content-area suse-product'
+          : 'content-area upstream'
+        }>
+          <slot></slot>
+        </div>
       </Host>
     );
   }
