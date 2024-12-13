@@ -1,6 +1,6 @@
 suse-pl-sidebar {
   display: block;
-  padding-top: 55px;
+  padding-top: 3.5rem;
 
   & nav {
     float: left;
@@ -9,19 +9,18 @@ suse-pl-sidebar {
     width: 25vw;
 
 
-    font-family: "SUSE", sans-serif;
     background-color: var(--color-white);
     color: var(--color-pine);
-    font-size: 20px;
+    font-size: 125%;
 
     & section {
-      padding: 2em 2em 0;
+      padding: 2rem 2rem 0;
 
       & h1 {
         font-size: inherit;
         font-weight: 500;
         border-bottom: 1px solid var(--color-fog);
-        margin-bottom: 0.5em !important;
+        margin-bottom: 0.5rem !important;
       }
 
       & a {

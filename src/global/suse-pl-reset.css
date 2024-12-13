@@ -18,7 +18,8 @@ scoped to .suse-pl class for easier merging with existing code bases
 }
 /* FONT FIXES */
 .suse-pl {
-  font-family: "SUSE", sans-serif;
+  font-family: "SUSE", "Verdana", sans-serif;
+  font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }

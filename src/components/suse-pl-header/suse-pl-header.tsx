@@ -21,7 +21,7 @@ export class SusePlHeader {
       <Host>
         <header class={
           this.suseRender()
-          ? 'suse-product'
+          ? 'suse-product suse-pl'
           : 'upstream'
         }>
           <h1>
