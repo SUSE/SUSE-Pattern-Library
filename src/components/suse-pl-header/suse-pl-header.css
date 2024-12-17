@@ -7,8 +7,7 @@ header {
   color: var(--color-black);
   position: fixed;
   width: 100%;
-  font-size: 16px;
-  height: 55px;
+  height: 3.5rem;
 
   display: flex;
   flex-wrap: nowrap;
@@ -18,14 +17,15 @@ header {
   & h1 {
     font-size: inherit;
     font-family: sans-serif;
-    font-weight: 400;
+    font-weight: 600;
+    line-height: 2rem;
 
     & img#logo {
       height: 1rem;
-      padding: 0.5em;
-      margin-right: 0.5em;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
       vertical-align: middle;
-      border-right: 2px solid var(--color-black);
+      border-right: 0.125rem solid var(--color-black);
       display: inline-block;
     }
   }
@@ -39,6 +39,6 @@ header.suse-product {
     font-family: "SUSE", sans-serif;
 
     & img#logo {
-      border-right: 2px solid var(--color-jungle);
+      border-right: 0.125rem solid var(--color-jungle);
   }
 }
