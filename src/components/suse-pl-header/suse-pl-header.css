@@ -40,5 +40,6 @@ header.suse-product {
 
     & img#logo {
       border-right: 0.125rem solid var(--color-jungle);
+    }
   }
 }
