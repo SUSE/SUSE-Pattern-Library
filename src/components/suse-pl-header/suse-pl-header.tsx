@@ -25,11 +25,7 @@ export class SusePlHeader {
           : 'upstream'
         }>
           <h1>
-            <img id="logo" src={
-              this.suseRender()
-              ? getAssetPath(`./assets/suse-hor-neg.svg`)
-              : this.logoSrc
-            }></img>
+            <img id="logo" src={ this.logoSrc }></img>
             { this.pageTitle }
           </h1>
           <slot></slot>

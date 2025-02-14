@@ -21,8 +21,8 @@ header {
     line-height: 2rem;
 
     & img#logo {
-      height: 1rem;
-      padding: 0.5rem;
+      height: 2rem;
+      padding: 0;
       margin-right: 0.5rem;
       vertical-align: middle;
       border-right: 0.125rem solid var(--color-black);
