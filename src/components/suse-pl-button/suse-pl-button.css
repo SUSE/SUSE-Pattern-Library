@@ -1,0 +1,89 @@
+:host {
+  display: inline-block;
+}
+
+button {
+  border: 2px solid;
+  padding: 0.25rem;
+  margin: 7px 10px;
+  min-width: 7rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button.suse-product {
+  font-family: "SUSE", sans-serif;
+}
+
+:host(.primary.persimmon) button {
+  background-color: var(--color-persimmon);
+  border-color: var(--color-persimmon);
+  color: var(--color-black);
+}
+
+:host(.primary.pine) button {
+  background-color: var(--color-pine);
+  border-color: var(--color-pine);
+  color: var(--color-white);
+}
+
+:host(.primary.waterhole) button {
+  background-color: var(--color-waterhole);
+  border-color: var(--color-waterhole);
+  color: var(--color-white);
+}
+
+:host(.secondary.persimmon) button {
+  background-color: transparent;
+  border-color: var(--color-persimmon);
+  color: var(--color-black);
+}
+
+:host(.secondary.pine) button {
+  background-color: transparent;
+  border-color: var(--color-pine);
+  color: var(--color-black);
+}
+
+:host(.secondary.waterhole) button {
+  background-color: transparent;
+  border-color: var(--color-waterhole);
+  color: var(--color-black);
+}
+
+:host(.tertiary.persimmon) button {
+  background-color: var(--color-persimmon-7);
+  border-color: var(--color-persimmon-6);
+  color: var(--color-persimmon);
+}
+
+:host(.tertiary.pine) button {
+  background-color: var(--color-pine-7);
+  border-color: var(--color-pine-6);
+  color: var(--color-pine);
+}
+
+:host(.tertiary.waterhole) button {
+  background-color: var(--color-blue-7);
+  border-color: var(--color-blue-6);
+  color: var(--color-waterhole);
+}
+
+:host(.danger) button {
+  background-color: var(--color-spectrum-8);
+  border-color: var(--color-spectrum-8);
+  color: var(--color-white);
+}
+
+:host(.warning) button {
+  background-color: var(--color-spectrum-7);
+  border-color: var(--color-spectrum-7);
+  color: var(--color-black);
+}
+
+:host(.primary.disabled) button, :host(.secondary.disabled) button, :host(.tertiary.disabled) button {
+  background-color: var(--color-fog-7);
+  border-color: var(--color-fog-4);
+  color: var(--color-fog-4);
+  cursor: not-allowed
+}

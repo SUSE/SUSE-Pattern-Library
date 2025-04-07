@@ -56,25 +56,15 @@
     </suse-pl-header>
     <suse-pl-sidebar>
       <suse-pl-nav-section section-title="About">
-        <li>
-          <a href="#" class="active">Getting Started</a>
+        <li class="disabled">
+          Getting Started</a>
         </li>
         <li class="disabled">
           Terms of Use
         </li>
       </suse-pl-nav-section>
       <suse-pl-nav-section section-title="Style Guide">
-        <li>
-          Color Palette
-          <ul>
-            <li>
-              <a href="#">Primary</a>
-            </li>
-            <li>Secondary</li>
-            <li>Infographics</li>
-            <li>Extended</li>
-          </ul>
-        </li>
+        <li class="disabled">Color Palette</li>
         <li class="disabled">Typography</li>
         <li class="disabled">Logos</li>
         <li class="disabled">Headings</li>
@@ -94,7 +84,9 @@
       <suse-pl-nav-section section-title="Components">
         <li class="disabled">Header</li>
         <li class="disabled">Sidebar</li>
-        <li class="disabled">Buttons</li>
+        <li class="active">
+          <a href="#" class="active">Buttons</a>
+        </li>
         <li class="disabled">Tables</li>
         <li class="disabled">Text Box</li>
         <li class="disabled">Logos</li>
@@ -102,7 +94,36 @@
       </suse-pl-nav-section>
     </suse-pl-sidebar>
     <suse-pl-content-area>
-      <h1>Getting Started</h1>
+      <h1>Buttons</h1>
+      <h2>Primary Buttons</h2>
+      <p>
+        <suse-pl-button class="primary persimmon">Submit</suse-pl-button>
+        <suse-pl-button class="primary pine">Save</suse-pl-button>
+        <suse-pl-button class="primary waterhole">Download</suse-pl-button>
+      </p>
+      <h2>Secondary Buttons</h2>
+      <p>
+        <suse-pl-button class="secondary persimmon">Submit</suse-pl-button>
+        <suse-pl-button class="secondary pine">Save</suse-pl-button>
+        <suse-pl-button class="secondary waterhole">Download</suse-pl-button>
+      </p>
+      <h2>Tertiary Buttons</h2>
+      <p>
+        <suse-pl-button class="tertiary persimmon">Submit</suse-pl-button>
+        <suse-pl-button class="tertiary pine">Save</suse-pl-button>
+        <suse-pl-button class="tertiary waterhole">Download</suse-pl-button>
+      </p>
+      <h2>Disabled Buttons</h2>
+      <p>
+        <suse-pl-button class="primary persimmon disabled">Submit</suse-pl-button>
+        <suse-pl-button class="secondary pine disabled">Save</suse-pl-button>
+        <suse-pl-button class="tertiary waterhole disabled">Download</suse-pl-button>
+      </p>
+      <h2>Danger/Warning</h2>
+      <p>
+        <suse-pl-button class="danger">Delete</suse-pl-button>
+        <suse-pl-button class="warning">Caution</suse-pl-button>
+      </p>
     </suse-pl-content-area>
   </body>
 </html>
