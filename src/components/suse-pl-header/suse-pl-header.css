@@ -1,0 +1,45 @@
+:host {
+  display: block;
+}
+
+header {
+  background-color: var(--color-fog-6);
+  color: var(--color-black);
+  position: fixed;
+  width: 100%;
+  height: 3.5rem;
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+  & h1 {
+    font-size: inherit;
+    font-family: sans-serif;
+    font-weight: 600;
+    line-height: 2rem;
+
+    & img#logo {
+      height: 2rem;
+      padding: 0;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+      border-right: 0.125rem solid var(--color-black);
+      display: inline-block;
+    }
+  }
+}
+
+header.suse-product {
+  background-color: var(--color-pine);
+  color: var(--color-fog);
+
+  & h1 {
+    font-family: "SUSE", sans-serif;
+
+    & img#logo {
+      border-right: 0.125rem solid var(--color-jungle);
+    }
+  }
+}

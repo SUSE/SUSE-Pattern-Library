@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/suse-pl.esm.js"></script>
+    <script nomodule src="/build/suse-pl.js"></script>
+    <link rel="stylesheet" href="/build/suse-pl.css" />
+    <style>
+      /*
+      SUSE Pattern Library Reset
+      */
+
+      /* EASY BOX MODEL */
+      *, ::before, ::after {
+        box-sizing: border-box;
+      }
+      /* NO MARGIN BY DEFAULT */
+      * {
+        margin: 0;
+      }
+      /* FONT FIXES */
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+      /* MEDIA */
+      :is(img, picture, video, canvas, svg) {
+        display: block;
+        max-width: 100%;
+      }
+      /* FIX FORM FONTS */
+      :is(input, button, textarea, select) {
+        font: inherit;
+      }
+      /* NO TEXT OVERFLOW */
+      :is(p, h1, h2, h3, h4, h5, h6) {
+        overflow-wrap: break-word;
+      }
+    </style>
+    <style>
+      body {
+        background-color: var(--color-fog-8);
+      }
+
+      body.suse-pl {
+        background-color: var(--color-jungle-8);
+      }
+    </style>
+  </head>
+  <body class="suse-pl">
+    <suse-pl-header page-title="Pattern Library" logo-src="https://www.suse.com/assets/img/suse-white-logo-green.svg">
+    </suse-pl-header>
+    <suse-pl-sidebar>
+      <suse-pl-nav-section section-title="About">
+        <li class="disabled">
+          Getting Started</a>
+        </li>
+        <li class="disabled">
+          Terms of Use
+        </li>
+      </suse-pl-nav-section>
+      <suse-pl-nav-section section-title="Style Guide">
+        <li class="disabled">Color Palette</li>
+        <li class="disabled">Typography</li>
+        <li class="disabled">Logos</li>
+        <li class="disabled">Headings</li>
+      </suse-pl-nav-section>
+      <suse-pl-nav-section section-title="Accessiblity">
+        <li class="disabled">Overview</li>
+        <li class="disabled">Developer checklist</li>
+        <li class="disabled">Keyboard Patterns</li>
+        <li class="disabled">Color Contrast</li>
+        <li class="disabled">Heirarchy</li>
+      </suse-pl-nav-section>
+      <suse-pl-nav-section section-title="Icons">
+        <li class="disabled">Spot Icons</li>
+        <li class="disabled">Actions/General</li>
+        <li class="disabled">Admonitions</li>
+      </suse-pl-nav-section>
+      <suse-pl-nav-section section-title="Components">
+        <li class="disabled">Header</li>
+        <li class="disabled">Sidebar</li>
+        <li class="active">
+          <a href="#" class="active">Buttons</a>
+        </li>
+        <li class="disabled">Tables</li>
+        <li class="disabled">Text Box</li>
+        <li class="disabled">Logos</li>
+        <li class="disabled">Errors/Warnings</li>
+      </suse-pl-nav-section>
+    </suse-pl-sidebar>
+    <suse-pl-content-area>
+      <h1>Buttons</h1>
+      <h2>Primary Buttons</h2>
+      <p>
+        <suse-pl-button class="primary persimmon">Submit</suse-pl-button>
+        <suse-pl-button class="primary pine">Save</suse-pl-button>
+        <suse-pl-button class="primary waterhole">Download</suse-pl-button>
+      </p>
+      <h2>Secondary Buttons</h2>
+      <p>
+        <suse-pl-button class="secondary persimmon">Submit</suse-pl-button>
+        <suse-pl-button class="secondary pine">Save</suse-pl-button>
+        <suse-pl-button class="secondary waterhole">Download</suse-pl-button>
+      </p>
+      <h2>Tertiary Buttons</h2>
+      <p>
+        <suse-pl-button class="tertiary persimmon">Submit</suse-pl-button>
+        <suse-pl-button class="tertiary pine">Save</suse-pl-button>
+        <suse-pl-button class="tertiary waterhole">Download</suse-pl-button>
+      </p>
+      <h2>Disabled Buttons</h2>
+      <p>
+        <suse-pl-button class="primary persimmon disabled">Submit</suse-pl-button>
+        <suse-pl-button class="secondary pine disabled">Save</suse-pl-button>
+        <suse-pl-button class="tertiary waterhole disabled">Download</suse-pl-button>
+      </p>
+      <h2>Danger/Warning</h2>
+      <p>
+        <suse-pl-button class="danger">Delete</suse-pl-button>
+        <suse-pl-button class="warning">Caution</suse-pl-button>
+      </p>
+    </suse-pl-content-area>
+  </body>
+</html>

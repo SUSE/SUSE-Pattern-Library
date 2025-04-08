@@ -1,0 +1,51 @@
+suse-pl-horizontal-card {
+  & article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1em;
+    overflow: scroll;
+
+    & header {
+      display: inline-block;
+      padding: 0 1em;
+      border-right: 1px solid;
+
+      & h1 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      & h2 {
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 1.5;
+      }
+    }
+
+    & section {
+      display: inline-block;
+      padding: 0 1em;
+      font-size: 90%;
+      font-weight: 200;
+
+      & dl {
+        display: grid;
+        grid-template-columns: max-content auto;
+        & dt {
+          grid-column-start: 1;
+          font-weight: 400;
+          white-space: nowrap;
+          border-bottom: 1px solid var(--color-fog-5);
+          padding-right: 0.5em;
+        }
+        & dd {
+          grid-column-start: 2;
+          display: inline-block;
+          white-space: nowrap;
+          border-bottom: 1px solid var(--color-fog-5);
+        }
+      }
+    }
+  }
+}
