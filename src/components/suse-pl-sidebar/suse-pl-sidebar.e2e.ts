@@ -13,7 +13,7 @@ describe('suse-pl-sidebar', () => {
     const page = await newE2EPage();
 
     await page.setContent('<suse-pl-sidebar></suse-pl-sidebar>');
-    const component = await page.find('suse-pl-sidebar');
+    // const component = await page.find('suse-pl-sidebar');
     // const element = await page.find('suse-pl-sidebar >>> h1');
     // expect(element.textContent).toEqual(`suse-pl-sidebar`);
   });
