@@ -1,4 +1,4 @@
-import { Component, Prop, Host, Element, getAssetPath, h } from '@stencil/core';
+import { Component, Prop, Host, Element, h } from '@stencil/core';
 
 @Component({
   tag: 'suse-pl-header',
