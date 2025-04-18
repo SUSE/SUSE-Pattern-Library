@@ -1,10 +1,7 @@
 name: Build Stencil Artifacts
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  release
 
 jobs:
   build:
@@ -26,7 +23,6 @@ jobs:
 
     - name: Release build artifacts
       uses: softprops/action-gh-release@v2
-      if: github.ref_type == 'tag'
       with:
         files: |
           dist/*
