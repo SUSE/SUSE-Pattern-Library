@@ -1,0 +1,45 @@
+:host {
+  display: block;
+  font-size: 16px;
+}
+
+.type-normal {
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.type-title {
+  font-size: 1.125em;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-white);
+
+  &:hover {
+    color: var(--color-jungle)
+  }
+}
+
+.type-topmenu {
+  font-size: 0.75em;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--color-white);
+
+  &:hover {
+    color: var(--color-jungle)
+  }
+}
+
+img {
+  max-width: 1em;
+  max-height: 1em;
+  margin-right: 5px;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

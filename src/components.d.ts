@@ -20,6 +20,14 @@ export namespace Components {
         "cardTitle": string;
         "color": string;
     }
+    interface SusePlLink {
+        /**
+          * The image path for the icon when the link type is `topmenu`
+         */
+        "icon": string;
+        "type": 'normal' | 'title' | 'topmenu';
+        "url": string;
+    }
     interface SusePlNavSection {
         "sectionTitle": string;
     }
@@ -52,6 +60,12 @@ declare global {
         prototype: HTMLSusePlHorizontalCardElement;
         new (): HTMLSusePlHorizontalCardElement;
     };
+    interface HTMLSusePlLinkElement extends Components.SusePlLink, HTMLStencilElement {
+    }
+    var HTMLSusePlLinkElement: {
+        prototype: HTMLSusePlLinkElement;
+        new (): HTMLSusePlLinkElement;
+    };
     interface HTMLSusePlNavSectionElement extends Components.SusePlNavSection, HTMLStencilElement {
     }
     var HTMLSusePlNavSectionElement: {
@@ -69,6 +83,7 @@ declare global {
         "suse-pl-content-area": HTMLSusePlContentAreaElement;
         "suse-pl-header": HTMLSusePlHeaderElement;
         "suse-pl-horizontal-card": HTMLSusePlHorizontalCardElement;
+        "suse-pl-link": HTMLSusePlLinkElement;
         "suse-pl-nav-section": HTMLSusePlNavSectionElement;
         "suse-pl-sidebar": HTMLSusePlSidebarElement;
     }
@@ -88,6 +103,14 @@ declare namespace LocalJSX {
         "cardTitle"?: string;
         "color"?: string;
     }
+    interface SusePlLink {
+        /**
+          * The image path for the icon when the link type is `topmenu`
+         */
+        "icon"?: string;
+        "type"?: 'normal' | 'title' | 'topmenu';
+        "url"?: string;
+    }
     interface SusePlNavSection {
         "sectionTitle"?: string;
     }
@@ -99,6 +122,7 @@ declare namespace LocalJSX {
         "suse-pl-content-area": SusePlContentArea;
         "suse-pl-header": SusePlHeader;
         "suse-pl-horizontal-card": SusePlHorizontalCard;
+        "suse-pl-link": SusePlLink;
         "suse-pl-nav-section": SusePlNavSection;
         "suse-pl-sidebar": SusePlSidebar;
     }
@@ -111,6 +135,7 @@ declare module "@stencil/core" {
             "suse-pl-content-area": LocalJSX.SusePlContentArea & JSXBase.HTMLAttributes<HTMLSusePlContentAreaElement>;
             "suse-pl-header": LocalJSX.SusePlHeader & JSXBase.HTMLAttributes<HTMLSusePlHeaderElement>;
             "suse-pl-horizontal-card": LocalJSX.SusePlHorizontalCard & JSXBase.HTMLAttributes<HTMLSusePlHorizontalCardElement>;
+            "suse-pl-link": LocalJSX.SusePlLink & JSXBase.HTMLAttributes<HTMLSusePlLinkElement>;
             "suse-pl-nav-section": LocalJSX.SusePlNavSection & JSXBase.HTMLAttributes<HTMLSusePlNavSectionElement>;
             "suse-pl-sidebar": LocalJSX.SusePlSidebar & JSXBase.HTMLAttributes<HTMLSusePlSidebarElement>;
         }
